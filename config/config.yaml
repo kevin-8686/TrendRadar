@@ -25,8 +25,8 @@ crawler:
 
 # 推送模式选择
 report:
-  mode: "current" # 可选: "daily"|"incremental"|"current"
-  rank_threshold: 5 # 排名高亮阈值
+  mode: "daily" # 可选: "daily"|"incremental"|"current"
+  rank_threshold: 10 # 排名高亮阈值
 
 notification:
   enable_notification: true # 是否启用通知功能，如果 false，则不发送手机通知
@@ -62,7 +62,7 @@ notification:
     telegram_chat_id: "" # Telegram Chat ID
     email_from: "" # 发件人邮箱地址
     email_password: "" # 发件人邮箱密码或授权码
-    email_to: "" # 收件人邮箱地址，多个收件人用逗号分隔
+    email_to: "793286868@qq.com" # 收件人邮箱地址，多个收件人用逗号分隔
     email_smtp_server: "" # SMTP服务器地址（可选，留空自动识别）
     email_smtp_port: "" # SMTP端口（可选，留空自动识别）
     ntfy_server_url: "https://ntfy.sh" # ntfy服务器地址，默认使用公共服务，可改为自托管地址
@@ -82,6 +82,10 @@ platforms:
   - id: "baidu"
     name: "百度热搜"
   - id: "wallstreetcn-hot"
+    name: "雪球"
+  - id: "xueqiu"
+    name: "淘股吧"
+  - id: "tgb"
     name: "华尔街见闻"
   - id: "thepaper"
     name: "澎湃新闻"
